@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>雪梨在线</title>
+    <style>
+    * {
+    padding:0;
+    margin:0;
+    }
+
+    a {
+    text-decoration: none;
+    }
+
+    ul {
+    	list-style-type: none;
+    }
+    .clear:after {
+    	content: "";
+    	display:block;
+    	height: 0;
+    	clear:both;
+    }
+    .zong{
+    	width:1300px;
+        height:2466px;
+    }
+    .container{
+    	width: 1200px
+    	margin:0 auto;
+    }
+    .header{
+    	height: 101px;
+    	line-height: 101px;
+    	width: 1200px;
+    	margin-left:90px;
+ 
+    }
+    .wenzi{
+    	width:170px;
+        height:39px;
+        font-size:40px;
+        font-family:Microsoft YaHei;
+        font-weight:bold;
+        color:rgba(0,163,255,1);
+        float: left;
+        margin-top: 33px;
+    }
+    .nav{
+    	float: left;
+    	margin-top: 42px;
+    }
+
+    .form{
+    	float: right;
+    	margin-top: 32px;
+    }  
+    .wen{
+    	float: right;
+    }
+    .nav li{
+    	float: left;
+    	width: 76px;
+    	text-align: center;
+        font-size:18px;
+        font-weight:400;
+    }
+    .nav a{
+    	color:rgba(5,5,5,1);
+    }
+    .search{
+    	float: left;
+    	width: 340px;
+    	padding-left: 19px;
+    	padding-top: 13px;
+    	padding-bottom: 12px;
+    	border:1px solid rgba(0,163,255,1);
+    }
+    .submit{
+    	float: left;
+    	width:58px;
+        height:43px;
+        background:rgba(0,163,255,1) url(./image/b4.png) no-repeat center center;
+        border:1px solid rgba(0,163,255,1);
+    }
+    .banner-one{
+    	background:url(./image/a17.png) no-repeat center center;
+    }
+    .banner-two{
+    	background:url(./image/a12.png) no-repeat center center;
+    }
+    .banner{
+    	height: 420px;
+    	position:relative;
+    	margin-left:40px;
+    }
+    .banner li{
+    	width: 100%;
+    	height: 420px;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }
+    .cen{
+    	width: 1200px;
+    	height: 60px;
+    	margin:0 auto;
+    	background:rgba(255,255,255,1);
+    	box-shadow:0px 2px 2px 0px rgba(118,118,118,0.2);
+    	margin-left:40px;
+    }
+    .nav-one li{
+    	width: 140px;
+    	float: left;
+    	margin-top: 21px;
+    	text-align: center;
+    	border-right:1px solid black;
+        font-size:16px;
+        font-weight:bold;
+    }
+    .first-one{
+    	color:rgba(0, 163, 255, 1);
+    }
+    .first-two{
+    	color: rgba(5, 5, 5, 1);
+    }
+    .wen-one{
+    	margin-top: 21px;
+    	float: right;
+    }
+    .nav-one{
+    	float: left;
+    }
+    .wen-one{
+    	color:rgba(0, 163, 255, 1);
+        font-size:16px;
+        font-weight:bold;
+    }
+    .wen-two{
+    	width:80px;
+        height:19px;
+        font-size:20px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(72,72,72,1);
+        float: left;
+    }
+    .wen-three{
+    	width:48px;
+        height:13px;
+        font-size:12px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(165,165,165,1);
+        float: right;
+    }
+    .product-one{
+    	float: left;
+    }
+    .product-info{
+    	width: 228px;
+    	height: 115px;
+    }
+    .zi-three{
+    	width:185px;
+        height:34px;
+        font-size:14px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(5,5,5,1);
+        line-height:20px;
+    }
+    .zi-one{
+        height:13px;
+        font-size:12px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(255,123,45,1);
+        float: left;
+    }
+    .zi-two{
+        height:13px;
+        font-size:12px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(153, 153, 153, 1);
+        float: left;
+    }
+    .product-one li{
+    	float: left;
+    	width:228px;
+        height:270px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 2px 4px 0px rgba(118,118,118,0.5);
+    } 
+    .wenzi-one{
+    	width:140px;
+        height:19px;
+        font-size:20px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(72,72,72,1);
+        float: left;
+    }
+    .wenzi-two li{
+        font-size:16px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        float: left;
+    }
+    .aa{
+    	color:rgba(0,163,255,1);
+    }
+    .ab{
+    	color:rgba(134, 134, 134, 1);
+    }
+    .wenzi-two{
+    	width:327px;
+        height:17px;
+        margin-top: 41px;
+        margin-left: 290px;
+    }
+    .wenzi-three{
+    	width:48px;
+        height:13px;
+        font-size:12px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(165,165,165,1);
+        float: right;
+    }
+    .cen-five p{
+    	width:80px;
+        height:19px;
+        font-size:20px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(72,72,72,1);
+    	margin-left:40px;
+
+    }
+    .biye-two{
+    	width:228px;
+        height:320px;
+    }
+    .biye-three{
+        font-size:18px;
+        font-family:Microsoft YaHei;
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+        line-height:20px;
+    }
+    .biye-four{
+        font-size:14px;
+        font-family:Microsoft YaHei;
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+        line-height:20px;
+    }
+    .biye-one{
+    	float: left;
+    	margin-top: 33px;
+    }
+    .biye-one li{
+    	float: left;
+    }
+    .biye-six{
+    	width:175px;
+        height:53px;
+        font-size:12px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        line-height:20px;
+    }
+    .last-one{
+    	margin-top: 73px;
+    	margin-left:100px;
+    }
+    .last-two{
+    	float: left;
+    }
+    .last-three{
+    	float: right;
+    }
+    .fa-one{
+        height:36px;
+        font-size:36px;
+        font-family:Microsoft YaHei;
+        font-weight:bold;
+        color:rgba(0,163,255,1);
+    	margin-top: 100px;
+    }
+    .fa-two{
+    	width:372px;
+        height:12px;
+        font-size:12px;
+        font-family:SimSun;
+        font-weight:400;
+        color:rgba(101,101,101,1);
+        line-height:18px;
+        margin-top: 35px;
+    }
+    .fa-three p{
+    	width:63px;
+        height:15px;
+        font-size:16px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,163,255,1);
+        line-height:18px;
+        margin-top: 11px;
+        margin-left: 27px;
+
+    }
+    .fa-three{
+    	width:120px;
+        height:36px;
+        border:1px solid rgba(0, 163, 255, 1);
+        margin-top: 33px;
+    }
+    .mi-one{
+    	margin-top: 15px;
+    }
+    .last-three p{
+        height:17px;
+        font-size:16px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+        line-height:21px;
+    }
+    .mi-four{
+    	margin-left: 123px;
+    	margin-right: 200px;
+    }
+    .mi-three{
+    	margin-left:170px;
+    }
+    .acc{
+    	margin-right: 15px;
+    }
+    .product-item img{
+    	width: 228px;
+    	height: 155px;
+    }
+    .biye-one li{
+    	position: relative;
+    }
+    .biye-one li div{
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	height: 123px;
+        background:rgba(0,0,0,0.8);
+    }
+    .cen-six{    	
+    	margin-left:40px;
+    }
+    .cen-four{
+    	margin-left:40px;
+    }
+    .cen-three{
+    	 margin-left:40px;
+    }
+    .cen-two{
+    	 margin-left:40px;
+    }
+    .cen-one{
+    	 margin-left:40px;
+    }
+    </style>
+</head>
+
+<body>
+	<div class="zong">
+    <div class="header">
+    	<div class="container clear">
+    		<p class="wenzi">雪梨在线</p>
+    		<ul class="nav clear">
+    			<li class="first"><a href="#">首页</a></li>
+    			<li><a href="#">课程</a></li>
+    			<li class="last"><a href="#">职业规划</a></li>
+    		</ul>
+    		<a href="#" class="wen">个人中心</a>
+    		<form class="form clear">
+    			<input type="text" placeholder="输入关键词" class="search"/>
+    			<input type="button" class="submit"/>
+    		</form>
+    	</div>   	
+    </div>
+    <div class="banner">
+    	<ul>
+    		<li class="banner-one"></li>
+    		<li class="banner-two"></li>
+    	</ul>
+    </div>
+    <div class="cen clear">
+    	<ul class="nav-one clear">
+    		<li><a href="#" class="first-one">精品推荐</a></li>
+    		<li><a href="#" class="first-two">JQuery</a></li>
+    		<li><a href="#" class="first-two">Spark</a></li>
+    		<li><a href="#" class="first-two">MySQL</a></li>
+    		<li><a href="#" class="first-two">JavaWeb</a></li>
+    		<li><a href="#" class="first-two">MySQL</a></li>
+    		<li><a href="#" class="first-two">JavaWeb</a></li>
+    	</ul>
+    	<a href="#" class="wen-one">修改兴趣</a>
+    </div>
+    <div class="cen-one clear">
+    	<p class="wen-two">精品推荐</p>
+    	<a href="#" class="wen-three">查看全部</a>
+    </div>
+    <div class="cen-two">
+    	<div class="container product clear">
+    		<ul class="product-one clear">
+    			<li class="product-item acc">
+    				<img src="./image/a15.png" alt="" width="228px"
+                    height="155px"/>
+                        <div class="product-info clear">
+                        	<p class="zi-three">Think PHP 5.0 博客系统实战项目演练</p>
+                        	<p class="zi-one">高级</p>
+                        	<p class="zi-two"> · 1125人在学习</p>
+                        </div>
+    			</li>
+    			<li class="product-item acc">
+    				<img src="./image/b5.png" alt="" width="228px"
+                    height="155px"/>
+                    <div class="product-info clear">
+                    	<p class="zi-three">Android 网络图片加载框架详解 
+                        <p>
+                        <p class="zi-one">高级</p>
+                        <p class="zi-two"> · 1125人在学习</p>
+                    </div>
+    			</li>
+    			<li class="product-item acc">
+   				<img src="./image/a13.png" alt="" width="228px"
+                    height="155px"/>
+                    <div class="product-info clear">
+                    	<p class="zi-three">Angular 2 最新框架+主流技术+项目实战
+                        <p>
+                        <p class="zi-one">高级</p>
+                        <p class="zi-two"> · 1125人在学习</p>
+                    </div>
+    			</li>
+    			<li class="product-item acc">
+   				<img src="./image/a7.png" alt="" width="228px"
+                    height="155px"/>
+                    <div class="product-info clear">
+                    	<p class="zi-three">Android Hybrid APP开发实战 H5+原生！
+                        <p>
+                        <p class="zi-one">高级</p>
+                        <p class="zi-two"> · 1125人在学习</p>
+                    </div>
+    			</li>
+    			<li class="product-item">
+   				<img src="./image/a8.png" alt="" width="228px"
+                    height="155px"/>
+                    <div class="product-info clear">
+                    	<p class="zi-three">Android Hybrid APP开发实战 H5+原生！
+                        </p>
+                        <p class="zi-one">高级</p>
+                        <p class="zi-two"> · 1125人在学习</p>
+                    </div>
+    			</li>
+    			<li class="product-item acc">
+    				<img src="./image/a16.png" alt="" width="228px"
+                    height="155px"/>
+                        <div class="product-info clear">
+                        	<p class="zi-three">Think PHP 5.0 博客系统实战项目演练</p>
+                        	<p class="zi-one">高级</p>
+                        	<p class="zi-two"> · 1125人在学习</p>
+                        </div>
+    			</li>
+    			<li class="product-item acc">
+    				<img src="./image/b6.png" alt="" width="228px"
+                    height="155px"/>
+                    <div class="product-info clear">
+                    	<p class="zi-three">Android 网络图片加载框架详解 
+                        </p>
+                        <p class="zi-one">高级</p>
+                        <p class="zi-two"> · 1125人在学习</p>
+                    </div>
+    			</li>
+    			<li class="product-item acc">
+   				<img src="./image/a14.png" alt="" width="228px"
+                    height="155px"/>
+                    <div class="product-info clear">
+                    	<p class="zi-three">Angular 2 最新框架+主流技术+项目实战
+                        </p>
+                        <p class="zi-one">高级</p>
+                        <p class="zi-two"> · 1125人在学习</p>
+                    </div>
+    			</li>
+    			<li class="product-item acc">
+   				<img src="./image/a9.png" alt="" width="228px"
+                    height="155px"/>
+                    <div class="product-info clear">
+                    	<p class="zi-three">Android Hybrid APP开发实战 H5+原生！
+                        </p>
+                        <p class="zi-one">高级</p>
+                        <p class="zi-two"> · 1125人在学习</p>
+                    </div>
+    			</li>
+    			<li class="product-item">
+   				<img src="./image/a10.png" alt="" width="228px"
+                    height="155px"/>
+                    <div class="product-info clear">
+                    	<p class="zi-three">Android Hybrid APP开发实战 H5+原生！
+                        </p>
+                        <p class="zi-one">高级</p>
+                        <p class="zi-two"> · 1125人在学习</p>
+                    </div>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    <div class="cen -three"> 
+    	<p class="wenzi-one">前端开发工程师</p>
+    	<ul class="wenzi-two clear">
+    		<li><a href="#" class="aa">热门</a></li>
+    		<li><a href="#" class="ab">初级</a></li>
+    		<li><a href="#" class="ab">中级</a></li>
+    		<li><a href="#" class="ab">高级</a></li>
+    	</ul>
+    	<a href="#" class="wenzi-three">查看全部</a>
+    </div>
+    <div class="cen-four">
+    	<ul class="product-one clear"> 
+    		<li class="product-item acc">
+    			<img src="./image/a1.png" alt=""/>
+    			<div class="product-info clear">
+    				<p class="zi-three">微软人工智能-数据分析平台</p>
+                    <p class="zi-one">高级</p>
+                    <p class="zi-two"> · 1125人在学习</p> 				
+    			</div>
+    		</li>
+    		<li class="product-item acc">
+    			<img src="./image/a3.png" alt=""/>
+    			<div class="product-info clear">
+    				<p class="zi-three">Unity Profiler入门</p>
+                    <p class="zi-one">高级</p>
+                    <p class="zi-two"> · 1125人在学习</p> 				
+    			</div>
+    		</li>
+    		<li class="product-item acc">
+    			<img src="./image/a2.png" alt=""/>
+    			<div class="product-info clear">
+    				<p class="zi-three">Cocos2d-x 引擎源码中的纹理优化</p>
+                    <p class="zi-one">高级</p>
+                    <p class="zi-two"> · 1125人在学习</p> 				
+    			</div>
+    		</li>
+    		<li class="product-item acc">
+    			<img src="./image/a5.png" alt=""/>
+    			<div class="product-info clear">
+    				<p class="zi-three">Kami2首页界面切换效果</p>
+                    <p class="zi-one">高级</p>
+                    <p class="zi-two"> · 1125人在学习</p> 				
+    			</div>
+    		</li> 
+    		<li class="product-item">
+    			<img src="./image/a4.png" alt=""/>
+    			<div class="product-info clear">
+    				<p class="zi-three">Android Hybrid APP开发实战H5+原生！    				</p>
+                    <p class="zi-one">高级</p>
+                    <p class="zi-two"> · 1125人在学习</p> 				
+    			</div>
+    		</li>    		   		    		
+    	</ul>
+    </div>
+    <div class="cen-five">
+    	<p>牛人推荐</p>
+    </div>
+    <div class="cen-six clear">
+    	<ul class="biye-one clear">
+    		<li class="acc"><img src="./image/a6.png" alt="" width="471px" height="320px">
+    		</li>
+    		<li class="acc"><img src="./image/b1.png" alt="" class="biye-two">
+    			<p class="biye-three">闻老师</p> <p class="biye-four">大数据</p>
+    			<p class="biye-six">高级互联网软件工程师，曾担任某物流公司CRM开发团队TL。多年JAVAEE、大数据领域研发</p>
+    		</li>
+    		<li class="acc"><img src="./image/b2.png" alt="" class="biye-two">
+    			<p class="biye-three">汪老师</p> <p class="biye-four">前端</p>
+    			<p class="biye-six">高级软件架构师，全栈开发，多年大型项目管理经验。对Web Components、Node、js……</p>
+    		</li>
+    		<li><img src="./image/b3.png" alt="" class="biye-two">
+    			<p class="biye-three">江老师</p> <p class="biye-four">前端</p>
+    			<p class="biye-six">多年软件开发经验和教学经验，精通html，css，js，asp，net等编程语言和数据库系统……</p>
+    		</li>
+    	</ul>
+    </div>
+    <div class="last-one">
+    	<div class="last-two clear">
+    		<p class="fa-one">雪梨在线</p>
+    		<p class="fa-two">致力于普及中国最好的教育，与中国一流大学和机构合作提供在线课程</p>
+    		<div class="fa-three">
+    			<p>下载APP</p>
+    		</div>
+    	</div>
+    	<div class="last-three clear mi-four">
+    		<p>合作伙伴</p>
+    		<ul class="mi-one ">
+    			<li><a href="#">合作机构</a></li>
+    			<li><a href="#">合作导师</a></li>
+    		</ul>
+    	</div>
+    </div>
+    	<div class="last-three clear mi-three">
+    		<p>新手指南</p>
+    		<ul class="mi-one ">
+    			<li><a href="#">如何注册</a></li>
+    			<li><a href="#">如何选课</a></li>
+    			<li><a href="#">如何拿到毕业证</a></li>
+    			<li><a href="#">学分是什么</a></li>
+    			<li><a href="#">考试未通过怎么办</a></li>
+    		</ul>
+    	</div>
+    	<div class="last-three clear mi-two">
+    		<p>关于雪梨网</p>
+    		<ul class="mi-one ">
+    			<li><a href="#">关于</a></li>
+    			<li><a href="#">管理团队</a></li>
+    			<li><a href="#">工作机会</a></li>
+    			<li><a href="#">客户服务</a></li>
+    			<li><a href="#">帮助</a></li>
+    		</ul>
+    	</div>
+    </div>
+    </div>
+</body>
+
+</html>
